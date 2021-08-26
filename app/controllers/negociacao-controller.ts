@@ -21,7 +21,7 @@ export class NegociacaoController {
     }
 
     //Decorator.
-    @logarTempoExecucao()
+    @logarTempoExecucao(1)
     public adiciona(): void {
         /*
             Zé, você já viu isso?
@@ -59,4 +59,5 @@ export class NegociacaoController {
         this.negociacoesView.update(this.negociacoes);
         this.mensagemView.update('Negociação adicionada com sucesso');
     }
+
 }
